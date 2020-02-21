@@ -68,6 +68,6 @@ vagrant ssh vqfx2
 
 ```
 
-ansible-playbook demo-playbooks/deploy.bgp.yaml
-ansible-playbook demo-playbooks/get.status.yaml
+ansible-playbook deploy.bgp.yaml
+ansible-playbook get.status.yaml
 ```
