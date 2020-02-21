@@ -34,7 +34,9 @@ Ansible is used to preconfigured both VQFX with an IP address on their interface
 **1) Install Juniper vqfx10k boxes**
 
 `vagrant box add juniper/vqfx10k-re`
+
 `vagrant box add juniper/vqfx10k-pfe`
+
 
 **2) Start pipenv**
 
