@@ -1,5 +1,5 @@
-# This task gets all Junos configuration from all devices
-- name: Deploy Junos configuration
+# This task build BGP config and deploy it
+- name: Deploy BGP configuration
   hosts: vqfx10k
   connection: local
   gather_facts: no
