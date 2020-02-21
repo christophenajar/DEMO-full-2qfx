@@ -33,9 +33,11 @@ Ansible is used to preconfigured both VQFX with an IP address on their interface
 
 **1) Install Juniper vqfx10k boxes**
 
-`vagrant box add juniper/vqfx10k-re`
+```
 
-`vagrant box add juniper/vqfx10k-pfe`
+vagrant box add juniper/vqfx10k-re
+vagrant box add juniper/vqfx10k-pfe
+```
 
 
 **2) Start pipenv**
@@ -52,3 +54,20 @@ Ansible is used to preconfigured both VQFX with an IP address on their interface
 
 `vagrant up`
 
+
+**5) Once both VMs are up and running, you can connect to them with**
+
+```
+
+vagrant ssh vqfx1
+vagrant ssh vqfx2
+```
+
+
+**6) Run some playbooks**
+
+```
+
+ansible-playbook deploy.bgp.yaml
+ansible-playbook get.status.yaml
+```
