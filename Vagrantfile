@@ -75,5 +75,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             "all:children" => ["vqfx10k", "vqfx10kpfe"]
         }
         ansible.playbook = "pb.conf.all.commit.yaml"
+	# because pipenv
+	ansible.extra_vars = { ansible_python_interpreter:"`pipenv --py`"}
     end
 end
