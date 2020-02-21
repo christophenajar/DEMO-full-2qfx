@@ -18,3 +18,9 @@
         passwd: Juniper
         format: text
         logfile: /tmp/changes.log
+    - name: Update inventory file
+      blockinfile:
+        path: .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory
+        block: |
+          [all:vars]
+          ansible_python_interpreter=`pipenv --py`
