@@ -1,5 +1,5 @@
-# This task gets all Junos configuration from all devices
-- name: Deploy Junos configuration
+# This task list many ways to get status from your devices
+- name: Get some status
   hosts: vqfx10k
   connection: local
   gather_facts: no
