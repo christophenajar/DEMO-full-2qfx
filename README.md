@@ -71,3 +71,10 @@ vagrant ssh vqfx2
 ansible-playbook deploy.bgp.yaml
 ansible-playbook get.status.yaml
 ```
+
+
+# More Juniper VQFX examples
+
+If you are looking for more examples using Vagrant and Juniper vqfx10K, see the link below :
+
+[https://github.com/Juniper/vqfx10k-vagrant](https://github.com/Juniper/vqfx10k-vagrant) 
