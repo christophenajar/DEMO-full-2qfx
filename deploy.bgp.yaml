@@ -7,14 +7,14 @@
     - Juniper.junos
   tasks:
     - name: Build BGP configuration
-      template: src=bgp-vqfx.conf.j2 dest=/tmp/{{ inventory_hostname }}.bgp.conf
+      template: src=bgp-vqfx.conf.j2 dest=~/tmp/{{ inventory_hostname }}.bgp.conf
     - name: Deploy BGP config to device ... please wait
       juniper_junos_config:
         load: 'merge'
-        src: "/tmp/{{ inventory_hostname }}.bgp.conf"
+        src: "~/tmp/{{ inventory_hostname }}.bgp.conf"
         host: "{{ ansible_ssh_host }}"
         port: "{{ ansible_ssh_port|string }}"
         user: root
         passwd: Juniper
         format: text
-        logfile: /tmp/changes.log
+        logfile: ~/tmp/changes.log

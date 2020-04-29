@@ -15,4 +15,4 @@
         passwd: Juniper
         format: text
         dest: "{{ inventory_hostname }}.conf"
-        logfile: /tmp/changes.log
+        logfile: ~/tmp/changes.log
